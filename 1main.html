@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property 2 Viewer</title>
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.158.0/examples/jsm/"
+        }
+    }
+    </script>
+    <style>
+        /* Центрируем заголовок по горизонтали, устанавливаем его сверху */
+        h1 {
+            position: absolute;
+            top: 10px;  /* Установим небольшой отступ сверху */
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2vw;  /* Используем относительный размер, который адаптируется под экран */
+            color: #fff;
+            z-index: 10; /* Убедимся, что текст будет выше остальных элементов */
+            margin: 0;  /* Убираем возможные внешние отступы */
+        }
+
+        /* Стиль для контейнера кнопок */
+        #button-container {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 10; /* Ensures the button is on top of other elements */
+        }
+
+        /* Обеспечиваем адаптивность для маленьких экранов */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 4vw;  /* Уменьшаем шрифт на маленьких экранах */
+                top: 5px; /* Уменьшаем отступ сверху */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>InterPres</h1>
+    
+    <!-- Container for buttons -->
+    
+
+    <script type="module" src="1main.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "threejs-project2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@mkkellogg/gaussian-splats-3d": "^0.4.5",
+    "express": "^4.21.1",
+    "gsap": "^3.12.5",
+    "three": "^0.170.0",
+    "three-orbitcontrols": "^2.110.2"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "scripts": {
+    "start": "http-server .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

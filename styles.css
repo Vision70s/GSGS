@@ -1,0 +1,35 @@
+/* Контейнер для кнопок */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Основной стиль для кнопок */
+.button-container button,
+.custom-button { /* Добавим класс custom-button для JS */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #000; /* Черный фон */
+    color: white;
+    transition: all 0.3s ease; /* Плавный переход */
+}
+
+/* Эффект наведения */
+.button-container button:hover,
+.custom-button:hover {
+    background-color: #555; /* Темно-серый фон при наведении */
+    color: #ddd; /* Светло-серый текст */
+    border-color: #777;
+}
+
+/* Дополнительный эффект при нажатии */
+.button-container button:active,
+.custom-button:active {
+    transform: scale(0.95); /* Небольшое уменьшение размера */
+}

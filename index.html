@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Viewer</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+        .navbar {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .description {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 10px 20px;
+            color: #333;
+            text-align: center;
+            font-size: 18px;
+        }
+        .preview-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px;
+        }
+        .preview {
+            position: relative;
+            width: 30%;
+            max-width: 300px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        .preview img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .preview-text {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        /* Mobile styles */
+        @media (max-width: 600px) {
+            .preview {
+                width: 90%;
+            }
+            .preview-text {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">Real Estate Showcase</div>
+
+    <!-- Page Description -->
+    <div class="description">
+        Welcome to our Real Estate Showcase.<br>
+        Тыкайте на превьюшки, здесь представлены разные компрессии файлов с разным размером.<br>
+        Реализовано на технологии <a href="https://github.com/mkkellogg/GaussianSplats3D" target="_blank">GaussianSplats3D</a>
+    </div>
+
+    <!-- Real Estate Previews -->
+    <div class="preview-section">
+        <div class="preview" onclick="loadViewer('1main.html')">
+            <img src="images/property1.jpg" alt="Property 1">
+            <div class="preview-text">ArchViz</div>
+        </div>
+        <div class="preview" onclick="loadViewer('main.html')">
+            <img src="images/property2.jpg" alt="MAGNUM SANUR INTERACTIVE">
+            <div class="preview-text">Magnum BigOne</div>
+        </div>
+        <div class="preview" onclick="loadViewer('3main.html')">
+            <img src="images/property3.jpg" alt="Property 3">
+            <div class="preview-text">LumaSmallSize</div>
+        </div>
+        <div class="preview" onclick="loadViewer('4main.html')">
+            <img src="images/property4.jpg" alt="Property 4">
+            <div class="preview-text">CompressedLQ</div>
+        </div>
+        <div class="preview" onclick="loadViewer('5main.html')">
+            <img src="images/property5.jpg" alt="Property 5">
+            <div class="preview-text">Супер Оптимиз</div>
+        </div>
+        <div class="preview" onclick="loadViewer('room.html')">
+            <img src="images/property6.jpg" alt="Room">
+            <div class="preview-text">Room</div>
+        </div>
+    </div>
+
+    <script>
+        function loadViewer(scriptPath) {
+            window.location.href = scriptPath;  // Redirect to selected file
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Camera Animation</title>
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.152.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.152.0/examples/jsm/"
+          }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Camera Animation Example</h1>
+    
+    <!-- Контейнер для кнопок -->
+    <div class="button-container" id="buttonContainer">
+        <!-- Кнопки для анимации камеры -->
+        <button id="view1Button">View 1</button>
+        <button id="view2Button">ADD SCENE</button>
+        <button id="view3Button">DELETE SCENE</button>
+    </div>
+
+    <!-- GSAP для анимации -->
+    <script src="./src/gsap.min.js"></script>
+
+    <!-- Подключение вашего JS-файла -->
+    <script type="module" src="3main.js"></script>
+</body>
+</html>
